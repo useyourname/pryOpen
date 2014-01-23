@@ -1,4 +1,4 @@
 pryOpen
 ======
 
-Open up all your favourite websites in a flash
+doing some node.js in this repo.
