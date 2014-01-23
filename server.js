@@ -6,7 +6,7 @@ function start(route, handle){
 		var pathname = url.parse(request.url).pathname;
 		console.log("Request received for path: " + pathname);
 		route(pathname, handle, response);
-	}).listen(8888);
+	}).listen(process.env.PORT, process.env.IP);
 	console.log("Server has started.");
 }
 
