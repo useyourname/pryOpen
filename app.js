@@ -4,8 +4,8 @@ var app = express();
 
 app.use(stylus.middleware(
   { 
-  	src: __dirname + '/views/stylesheets/',
-  	dest: __dirname + '/public/css/'
+    src: __dirname + '/views/stylesheets/',
+    dest: __dirname + '/public/css/'
   }
 ));
 app.use(express.static(__dirname + '/public'));
@@ -15,5 +15,6 @@ app.set('view engine', 'jade');
 app.get("/", function(request, response){
 	response.render("index");
 });
-app.listen(process.env.PORT || 8888, process.env.ID || '127.0.0.1');
+// app.listen(process.env.PORT || 8888, process.env.ID || '127.0.0.1');
+app.listen(process.env.PORT, process.env.ID);
 console.log("express server listening on 8888");
