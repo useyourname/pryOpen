@@ -12,12 +12,16 @@ body {
 }
 body {
   font-family: Courier, Arial, sans-serif, Helvetica;
-  font: sans-serif;
   background-color: #fff9df;
   font-size: 60px;
   font-weight: 200;
 }
-.btn-circle {
+input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+#btn-circle {
   text-align: center;
   position: absolute;
   background-color: #33b5e5;
@@ -39,7 +43,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-.btn-circle:hover {
+#btn-circle:hover {
   width: 500px;
   height: 500px;
   font-size: 50px;
