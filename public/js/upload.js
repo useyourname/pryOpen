@@ -1,6 +1,11 @@
 $("document").ready(function(){	
+	
 	$('#btn-circle').click(function(){
-	  alert('div'); 
+	  $('form').click();
+	});
+
+	$('form').click(function(event){
+	  event.stopPropagation();
 	  $('input').click();
 	});
 
@@ -9,7 +14,6 @@ $("document").ready(function(){
 	});
 
 	$('input').change(function() {
-  	alert('changed!');
 		var fileName = this.value.toUpperCase();
 	  suffix = ".APK";
 	  if( (fileName.length < 4) || (fileName.substr(fileName.length - 4) !== suffix) ){

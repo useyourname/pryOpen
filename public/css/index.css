@@ -43,6 +43,7 @@ input {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow: hidden;
 }
 #btn-circle:hover {
   width: 500px;
